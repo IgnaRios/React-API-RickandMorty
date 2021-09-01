@@ -1,3 +1,47 @@
+
+Crear una app de Rick and Morty,
+
+app
+    ->Header
+    ->characters
+        ->Character
+    ->Aside
+    
+
+
+
+hacer un Get a la api para traer todos los personajes. 
+    |->implementar cards para mostrar los personajes
+        ->nombre
+        ->imagen
+        ->fecha de aparicion
+        ->
+
+implementar un serch en el <header> para buscar los personajes
+
+implementar un aside con los personajes favoritos
+
+
+
+Implementar Redux
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
