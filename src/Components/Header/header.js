@@ -16,6 +16,7 @@ const Header = ({handlerSearch}) => {
 
     return (
     <div className='form-container'>
+        <h1>Rick and Morty</h1>
         <form className='form' onSubmit={handlerSubmit}>
             <input onChange={handlerInput}className='input-form' type='text' placeholder='Buscar por nombre'>
 
