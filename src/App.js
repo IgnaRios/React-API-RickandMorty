@@ -13,6 +13,12 @@ function App() {
       setSearch(name);
     }
 
+    const handlerDelete = (id) => {
+      const favCharacters = favorites.filter((favCharacter) => favCharacter.id !== id)
+      setFavorites(favCharacters);
+      console.log(favCharacters);
+    }
+
     return (
       <>
       <Header handlerSearch={handlerSearch}/>
@@ -20,7 +26,7 @@ function App() {
         <div className='mainCharacter'>
           <Characters search={search} favorites={favorites} setFavorites={setFavorites}/>
         </div>
-        <Favorites favorites={favorites} setFavorites={setFavorites} />
+        <Favorites handlerDelete={handlerDelete} favorites={favorites}/>
       </div>
       </>
     );

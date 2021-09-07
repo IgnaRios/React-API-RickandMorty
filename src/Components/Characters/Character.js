@@ -1,5 +1,5 @@
 import React from 'react';
-import ShowFavorites from '../Aside/Favorites';
+
 
 const Character = ({id, name, status, species, image, origin, favorites, setFavorites}) => {
     
