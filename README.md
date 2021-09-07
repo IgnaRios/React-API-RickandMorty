@@ -22,12 +22,44 @@ implementar un serch en el <header> para buscar los personajes
 implementar un aside con los personajes favoritos
 
 
+const [favorite, setFavorites ] = useState({});
+
+const handlerFav = (e) = {
+    
+}
+
+
+
+
+
 
 Implementar Redux
 
+STORE
+
+ACTION
+
+const add = () =>{
+    return{
+        type: 'ADD'
+    }
+};
+
+const delete = () => {
+    return {
+        type: 'DELETE'
+    }
+};
+
+REDUCER
+const initialState = {}
+
+const favoritesList = (state = initialState, action) => {
+
+}
 
 
-
+DISPATCH
 
 
 

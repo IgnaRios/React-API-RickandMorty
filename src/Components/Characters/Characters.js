@@ -5,7 +5,7 @@ import { enviroment } from '../constants';
 import { useFetch } from '../CustomHooks/useFetch';
 import Pagination from './../constants/Paginate'
 
-const Characters = ({search}) => {
+const Characters = ({search, favorites, setFavorites}) => {
     const [ page, setPage ] = useState(enviroment.CHARACTER_ENDPOINT);
 
     useEffect(()=>{
@@ -27,7 +27,7 @@ const Characters = ({search}) => {
             <Loading/>
         )
         : characters.map((character) =>(
-            <Character key={character.id} {...character} />))
+            <Character key={character.id} {...character} favorites={favorites} setFavorites={setFavorites} />))
         }
         </div>
         <Pagination {...info} handlerPage={handlerPage} />

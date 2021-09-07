@@ -1,12 +1,12 @@
 const Pagination = ({next, prev, handlerPage}) => {
 
     const handlerPrevPage = () =>{
-        const [_, prevPage] = prev.split('?');
+        const [, prevPage] = prev.split('?');
         handlerPage(prevPage);
     }
 
     const handlerNextPage = () =>{
-        const [_, nextPage] = next.split('?');
+        const [, nextPage] = next.split('?');
         handlerPage(nextPage);
     }
     return (  

@@ -6,24 +6,24 @@ import './App.css';
 
 
 function App() {
-
+  const [favorites, setFavorites] = useState([])
   const [search, setSearch] = useState('');
 
-  const handlerSearch = (name) => {
-    setSearch(name);
-  }
+    const handlerSearch = (name) => {
+      setSearch(name);
+    }
 
-  return (
-    <>
-    <Header handlerSearch={handlerSearch}/>
-    <div className='main'>
-      <div className='mainCharacter'>
-        <Characters search={search}/>
+    return (
+      <>
+      <Header handlerSearch={handlerSearch}/>
+      <div className='main'>
+        <div className='mainCharacter'>
+          <Characters search={search} favorites={favorites} setFavorites={setFavorites}/>
+        </div>
+        <Favorites favorites={favorites} setFavorites={setFavorites} />
       </div>
-      <Favorites />
-    </div>
-    </>
-  );
+      </>
+    );
 }
 
 export default App;
