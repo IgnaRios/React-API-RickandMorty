@@ -28,22 +28,33 @@ body{
     
 }
 
-.btn-form{
+.btn-add {
     color: #fff;
     background-color: #4c81af;
     border: none;
     border-radius: 4px;
-    margin: 10px;
+    margin: 5px;
+    padding: 5px;
+    font-size: 15px;
+    width: 90%;
+}
+
+.btn-form {
+    color: #fff;
+    background-color: #4c81af;
+    border: none;
+    border-radius: 4px;
+    margin: 5px;
     padding: 5px;
     font-size: 15px;
     width: 100px;
 }
-.btn-form:hover{
+.btn-form:hover, .btn-add:hover{
     color: #fff;
     background-color: #64a2d8;
 }
 
-.btn-form:active{
+.btn-form:active, .btn-add:active{
     color: #fff;
     background-color: #64a2d8;
     transform: translateY(

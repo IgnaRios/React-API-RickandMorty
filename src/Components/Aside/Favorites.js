@@ -15,7 +15,9 @@ const Favorites = ({favorites, handlerDelete}) => {
     );
 }
 
-export const ShowFavorites = ({id, name, img, status, handlerDelete}) => {
+export const ShowFavorites = ({id, name, img, status,  handlerDelete}) => {
+
+
 
     function remove (e) {
         const elementToDelete =id;
