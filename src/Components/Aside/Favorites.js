@@ -7,7 +7,7 @@ const Favorites = ({favorites, handlerDelete}) => {
             <h1>Favoritos</h1>
             {favorites.map((favorite) =>{
                 return(
-                    <ShowFavorites key={favorite.id} {...favorite} favorites={favorites} handlerDelete={handlerDelete} />
+                    <ShowFavorites key={favorite.id} {...favorite} handlerDelete={handlerDelete} />
                 );
             })}
         </div>
@@ -17,8 +17,9 @@ const Favorites = ({favorites, handlerDelete}) => {
 
 export const ShowFavorites = ({id, name, img, status, handlerDelete}) => {
 
-    function remove (id) {
-        handlerDelete(id)
+    function remove (e) {
+        const elementToDelete =id;
+        handlerDelete(elementToDelete)
     }
 
     return (  

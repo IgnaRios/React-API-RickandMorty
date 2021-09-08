@@ -14,9 +14,8 @@ function App() {
     }
 
     const handlerDelete = (id) => {
-      const favCharacters = favorites.filter((favCharacter) => favCharacter.id !== id)
+      const favCharacters = favorites.filter((character) => character.id !== id);
       setFavorites(favCharacters);
-      console.log(favCharacters);
     }
 
     return (
