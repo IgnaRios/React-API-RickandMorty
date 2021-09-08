@@ -24,9 +24,11 @@ const Character = ({id, name, status, species, image, origin, favorites, setFavo
             <h2 className='card-name'>{name}</h2>            
             <img className='card-img' src={image} alt={name}></img> 
             <button onClick={addFavorites} className='btn-add'>favorite</button>
-            <h4 className='card-h4 specie'>Especie: {species}</h4>
-            <h4 className='card-h4 name'>Origen: {origin.name}</h4>
-            <h4 className='card-h4 status'>Estado: {status}</h4>      
+            <div className='card-text'>
+                <h4 className='card-h4 specie'>Especie: {species}</h4>
+                <h4 className='card-h4 name'>Origen: {origin.name}</h4>
+                <h4 className='card-h4 status'>Estado: {status}</h4>      
+            </div>
         </div>
     );
 }
